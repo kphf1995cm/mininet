@@ -112,6 +112,7 @@ class Topo( object ):
         self.lopts = params.pop( 'lopts', {} )
         # ports[src][dst][sport] is port on dst that connects to src
         self.ports = {}
+        
         self.build( *args, **params )
 
     def build( self, *args, **params ):
